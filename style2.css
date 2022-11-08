@@ -201,6 +201,9 @@ path{
   color: white;
   
 }
+.diag{
+  color: black;
+}
 input.signin_c{
   width: 25vw;
   color:white;
