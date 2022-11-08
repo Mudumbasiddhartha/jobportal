@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="js/script.js"></script>
+
+    <title>Register-Employer</title>
+</head>
+
+<body class="h-full ">
+    <header class="py-5  relative flex flex-row justify-between items-center bg-black">
+        <a href="index.html" class="text-4xl text-primary-text brand font-bold">CareerBoost</a>
+
+        <ul
+            class="nav shadow-lg md:shadow-none hidden z-50 bg-#ef9273  px-5 md:px-0 py-10 md:py-0 md:flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 absolute top-0 h-64 md:h-auto  md:top-0 md:relative  md:w-auto md:space-x-10 text-sm font-medium left-0 right-0 " id = "nav">
+            
+            <li><a href="candidate_login.html" class="hover:text-blue-700">Applicant Sign In</a></li>
+            <li><a href="employer_login.html" class="hover:text-blue-700">Employer Sign In</a></li>
+            <li>
+                <a href="applicant_reg.html"
+                    class="primary-btn rounded py-4 md:py-3 px-5 mt-10 block md:inline w-full btn-primary">Applicant Sign Up</a>
+            </li>
+            
+            <span class="absolute md:hidden toggle-close top-0 right-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </span>
+        </ul>
+        <span class="block md:hidden toggle-open">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </span>
+    </header>
+    <main class="padded">
+    <div class="text-center my-14">
+        <h1 class="text-2xl md:text-4xl font-bold text-primary-text">Create an employer account</h1>
+        <p class="text-sm">Set up your employer account and fast-track your recruitment process</p>
+    </div>
+    <form action="employer_login.html">
+        <h1 class="text-xl font-bold text-primary-text text-center">PERSONAL INFORMATION</h1>
+        <div class="border py-5 md:py-10 px-5 md:px-14 my-10 md:w-3/4 mx-auto shadow-lg bbox">
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center md:space-x-10 my-5 ">
+                <div class="form-group w-full">
+                    <label for="first-name" class="text-sm font-bold">First Name</label>
+                    <input type="text" id="first-name" required
+                        class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+                </div>
+                <div class="form-group w-full">
+                    <label for="last-name" class="text-sm font-bold">Last Name</label>
+                    <input type="text" id="last-name" required
+                        class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+                </div>
+            </div>
+            <div class="form-group mb-5">
+                <label for="email" class="text-sm font-bold">Email Address</label>
+                <input type="email" id="email" required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+            <div class="form-group mb-5">
+                <label for="password" class="text-sm font-bold">Password</label>
+                <input type="password" id="password" required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+        </div>
+        <h1 class="text-xl font-bold text-primary-text text-center">COMPANY DETAILS</h1>
+        <div class="border py-5 md:py-10 px-5 md:px-14 my-10 md:w-3/4 mx-auto shadow-lg bbox">
+            <div class="form-group mb-5">
+                <label for="company" class="text-sm font-bold">Company name*</label>
+                <input type="text" id="company" required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+            <div class="form-group mb-5">
+                <label for="industry" class="text-sm font-bold">Industry*</label>
+                <input type="text" id="industry"required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+            <div class="form-group mb-5">
+                <label for="size" class="text-sm font-bold">Company size</label>
+                <input type="number" id="size" required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+            <div class="form-group mb-5">
+                <label for="website" class="text-sm font-bold">Website URL*</label>
+                <input type="url" id="website" required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center md:space-x-10 my-5">
+                <div class="form-group w-full">
+                    <label for="country" class="text-sm font-bold">Country*</label>
+                    <input type="text" id="country" required
+                        class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+                </div>
+                <div class="form-group w-full">
+                    <label for="state" class="text-sm font-bold">State</label>
+                    <input type="text" id="state" required
+                        class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+                </div>
+            </div>
+            <div class="form-group w-full mb-5">
+                <label for="role" class="text-sm font-bold">Your role*</label>
+                <textarea id="role" rows="10" class="border block w-full border-gray-700 rounded"></textarea>
+            </div>
+            <div class="form-group mb-5">
+                <label for="phone" class="text-sm font-bold">Contact phone number*</label>
+                <input type="number " id="phone" required
+                    class="h-14 w-full rounded-md border focus:outline-none focus:shadow-outline-blue focus:border-blue-300 border-gray-700 bg-white px-4 text-sm font-medium">
+            </div>
+            <div class="form-group mt-8 mb-5">
+                <input type="submit" required value="Create an account" class=" primary-btn rounded py-4 md:py-3 px-5 mt-10 block md:inline w-full btn-primary">
+            </div>
+        </div>
+    </form>
+</main>
+</body>
+
+</html>
